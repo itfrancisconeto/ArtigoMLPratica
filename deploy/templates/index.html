@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body class="body">
+        <div>
+            <header>
+            </header>
+            <div>
+                <font>Temperatura Minima (degrees Celsius):</font>
+                <br>
+                <form action="/model/" method=post enctype=multipart/form-data>
+                    <input type="text" name="preditor"> 
+                    <input type=submit value=Predict></input>
+                </form>
+                <br>
+                <font>Temperatura Máxima (degrees Celsius): {{ predict }}</font>
+            </div>
+        </div>
+    </body>
+</html>
